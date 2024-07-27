@@ -6,6 +6,11 @@ lsp_zero.on_attach(function(client, bufnr)
   lsp_zero.default_keymaps({buffer = bufnr})
 end)
 
+
+
+
+
+
 -- Mason setup
 require('mason').setup({})
 
