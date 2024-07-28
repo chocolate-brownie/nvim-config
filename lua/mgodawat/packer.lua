@@ -13,8 +13,10 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	-- Installing theme
-	use({ 'rose-pine/neovim', as = 'rose-pine' })
-	vim.cmd('colorscheme rose-pine')
+	use ({ 'rose-pine/neovim', as = 'rose-pine' })
+    use ({'folke/tokyonight.nvim', as = 'tokyonight'})
+    use ({'rebelot/kanagawa.nvim', as = 'kanagawa'})
+	vim.cmd('colorscheme rose-pine-main')
 	-- Installing Treesitter for syntax highlighting
 	use {
 		'nvim-treesitter/nvim-treesitter',
@@ -55,4 +57,6 @@ return require('packer').startup(function(use)
             require("nvim-autopairs").setup {}
         end
     }
+    -- Neo tree
+    use ('nvim-tree/nvim-tree.lua')
 end)
