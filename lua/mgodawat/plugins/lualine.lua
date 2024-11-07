@@ -4,7 +4,7 @@ return {
         "nvim-lualine/lualine.nvim",
         opts = {
             options = {
-                theme = "catppuccin", -- Use the Catppuccin theme for Lualine
+                theme = "rose-pine", -- Use the Rose Pine theme for Lualine
                 section_separators = { left = "", right = "" }, -- Customize separators
                 component_separators = { left = "", right = "" }, -- Customize component separators
                 icons_enabled = true,

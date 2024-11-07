@@ -1,41 +1,26 @@
 return {
-    -- Catppuccin colorscheme
+    -- Rose Pine colorscheme
     {
-        "catppuccin/nvim",
-        name = "catppuccin",
+        "rose-pine/neovim",
+        name = "rose-pine",
         priority = 1000,
         opts = {
-            transparent_background = true, -- Enable transparency
-            term_colors = true, -- Terminal colors
-            styles = {
-                -- comments = { "italic" }, -- Italic for comments
-                -- keywords = { "italic" }, -- Italic for keywords
-                -- functions = { "bold" }, -- Bold for function names
-                -- variables = { "none" }, -- No style for variables
+            dark_variant = "main", -- You can change to "moon" or "dawn" if preferred
+            bold_vert_split = false,
+            dim_nc_background = false,
+            disable_background = true, -- Enable transparency
+            disable_float_background = true, -- Floating windows transparent
+            disable_italics = true,
+            highlight_groups = {
+                Function = { fg = "rose", bold = true }, -- Function names bold
+                Identifier = { fg = "pine" }, -- Variables
+                Todo = { fg = "gold", bold = true }, -- TODOs in bold
+                Comment = { fg = "muted", italic = true }, -- Comments italic
+                Error = { fg = "love", bold = true }, -- Errors in bold
             },
-            integrations = {
-                cmp = true,
-                gitsigns = true,
-                nvimtree = true,
-                telescope = true,
-                treesitter = true,
-                notify = false,
-                mini = false,
-            },
-            custom_highlights = function(colors)
-                return {
-                    Normal = { bg = "NONE" }, -- Main window background transparent
-                    NormalFloat = { bg = "NONE" }, -- Floating windows transparent
-                    Function = { fg = colors.blue, style = { "bold" } }, -- Function names bold
-                    Identifier = { fg = colors.teal }, -- Variables
-                    Todo = { fg = colors.yellow, style = { "bold" } }, -- TODOs in bold
-                    Comment = { fg = colors.overlay0, style = { "italic" } }, -- Comments italic
-                    Error = { fg = colors.red, style = { "bold" } }, -- Errors in bold
-                }
-            end,
         },
         init = function()
-            vim.cmd("colorscheme catppuccin-mocha")
+            vim.cmd("colorscheme rose-pine")
         end,
     },
 }
