@@ -1,28 +1,30 @@
 -- Colorscheme
 return {
    {
-       "folke/tokyonight.nvim",
-       name = "tokyonight",
+       "rose-pine/neovim",
+       name = "rose-pine",
        priority = 1000,
        opts = {
-           style = "moon",
-           transparent = true,
-           styles = {
-               functions = { bold = true },
-               comments = { italic = true },
+           dark_variant = "main",
+           bold_vert_split = false,
+           dim_nc_background = false,
+           disable_background = true,
+           disable_float_background = true,
+           disable_italics = true,
+           highlight_groups = {
+               Function = { fg = "rose", bold = true },
+               Identifier = { fg = "pine" },
+               Todo = { fg = "gold", bold = true },
+               Comment = { fg = "muted", italic = true },
+               Error = { fg = "love", bold = true },
            },
-           on_highlights = function(hl, c)
-               hl.Function = { fg = c.blue, bold = true }
-               hl.Identifier = { fg = c.cyan }
-               hl.Todo = { fg = c.yellow, bold = true }
-               hl.Comment = { fg = c.comment, italic = true }
-               hl.Error = { fg = c.red, bold = true }
-           end
        },
        init = function()
-           vim.cmd("colorscheme tokyonight")
+           vim.cmd("colorscheme rose-pine")
        end,
    },
 }
+
+
 
 
