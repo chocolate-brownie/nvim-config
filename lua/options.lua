@@ -1,4 +1,4 @@
-require "nvchad.options"
+require("nvchad.options")
 
 -- Add custom options here!
 
@@ -58,4 +58,3 @@ o.mouse = "a"
 -- vim.cmd([[
 --   autocmd BufWritePre *.c,*.cpp :CFormatter42 -- Format before saving
 -- ]])
-
