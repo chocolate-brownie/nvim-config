@@ -1,27 +1,25 @@
 require("nvchad.options")
-
 -- Add custom options here!
-
 local o = vim.o
 
+-- Indentation settings (globally)
+vim.opt.tabstop = 4 -- Size of a hard tabstop (ts)
+vim.opt.shiftwidth = 4 -- Size of an indentation (sw)
+vim.opt.expandtab = true -- Always uses spaces instead of tab characters (et)
+vim.opt.softtabstop = 4 -- Size of a soft tabstop (sts)
+vim.opt.autoindent = true -- Copy indent from current line when starting a new line
+vim.opt.smartindent = true -- Do smart indenting when starting a new line
+
 -- UI settings
-o.cursorlineopt = "both" -- Enable highlighting of both cursor line and column
-vim.wo.number = true -- Show line numbers
-vim.wo.relativenumber = true -- Show relative line numbers
-vim.wo.cursorline = true -- Highlight the current line
-vim.wo.cursorcolumn = false -- Highlight the current column
+o.cursorlineopt = "both"
+vim.wo.number = true
+vim.wo.relativenumber = true
+vim.wo.cursorline = true
+vim.wo.cursorcolumn = false
 
 -- 42 School header configuration
 vim.g.user42 = "mgodawat" -- Your 42 login
 vim.g.mail42 = "mgodawat@student.42.fr" -- Your 42 email
-
--- C programming settings
-vim.bo.tabstop = 4 -- Set tab width to 4 spaces
-vim.bo.shiftwidth = 4 -- Indent using 4 spaces
-vim.bo.softtabstop = 4 -- Use 4 spaces when pressing Tab
-vim.bo.expandtab = true -- Convert tabs to spaces
-vim.bo.autoindent = true -- Enable auto-indentation
-vim.bo.smartindent = true -- Enable smart indentation
 
 -- Enable syntax highlighting and filetype detection
 vim.cmd("syntax on")
