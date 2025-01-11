@@ -22,8 +22,8 @@ vim.g.user42 = "mgodawat" -- Your 42 login
 vim.g.mail42 = "mgodawat@student.42.fr" -- Your 42 email
 
 -- Enable syntax highlighting and filetype detection
-vim.cmd("syntax on")
-vim.cmd("filetype plugin indent on")
+-- vim.cmd("syntax on")
+-- vim.cmd("filetype plugin indent on")
 
 -- Searching
 o.ignorecase = true -- Case-insensitive search
