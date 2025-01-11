@@ -31,7 +31,7 @@ return {
     opts = {
       ensure_installed = {
         "clangd",
-        "clangd-format",
+        "clang-format",
         "codelldb",
       }
     }
