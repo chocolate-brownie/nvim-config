@@ -1,9 +1,36 @@
-**This repo is supposed to used as config by NvChad users!**
+# My Neovim Configuration
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
+Personal Neovim configuration based on NvChad, optimized for C/C++ development.
 
-# Credits
+## Features
 
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+- [x] Base NvChad Configuration
+- [x] Custom Theme Setup
+- [x] LSP Support
+ - [x] C/C++ LSP (clangd)
+ - [x] Basic LSP Keybindings
+- [x] Custom Keymaps
+ - [x] `;` for Command Mode
+ - [x] `jk` for Escape
+- [x] Basic Git Integration
+- [ ] Code Formatting
+ - [ ] C/C++ Auto-formatting with clang-format via null-ls
+ - [ ] Custom format-on-save setup
+- [ ] Debugging Support
+ - [ ] C/C++ Debugging with codelldb
+ - [ ] DAP UI Configuration
+ - [ ] Custom Debug Keybindings
+
+## TODO
+
+- [ ] Set up null-ls for code formatting
+- [ ] Configure debugging tools (DAP)
+ - [ ] Install and configure codelldb
+ - [ ] Set up DAP UI
+ - [ ] Add debug keybindings
+
+## Installation
+
+1. Install NvChad
+2. Clone this repository
+3. [Additional installation steps...]
