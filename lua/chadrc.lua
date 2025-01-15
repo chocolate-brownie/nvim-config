@@ -4,7 +4,7 @@
 local M = {}
 
 M.base46 = {
-    theme = "gruvbox",
+    theme = "onedark",
     transparency = true,
     hl_override = {
         -- Comments and macros (your working part)
@@ -15,14 +15,14 @@ M.base46 = {
 
         -- Function highlights from your screenshot
         Function = { bold = true, italic = false },
-        -- ["@keyword.return"] = { italic = true },
-        ["@type.builtin"] = { italic = true },
-        ["@function"] = { bold = true },
-        ["@function.call"] = { bold = true },
+        -- ["@keyword"] = { bold = true },
+        -- ["@type.builtin"] = { bold = true },
+        -- ["@function"] = { bold = true },
+        -- ["@function.call"] = { bold = true },
 
 
          -- Variables in italic
-        ["@variable.parameter"] = { italic = true, bold = false },
+        -- ["@variable.parameter"] = { italic = true, bold = false },
     },
 }
 
