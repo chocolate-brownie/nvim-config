@@ -15,8 +15,8 @@ M.base46 = {
         
         -- Function highlights from your screenshot
         Function = { bold = true, italic = false },
-        -- ["@keyword"] = { bold = true },
-        -- ["@type.builtin"] = { bold = true },
+        ["@keyword"] = { italic = true },
+        ["@type.builtin"] = { italic = true },
         -- ["@function"] = { bold = true },
         -- ["@function.call"] = { bold = true },
         

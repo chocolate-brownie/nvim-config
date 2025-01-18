@@ -14,8 +14,9 @@ vim.opt.smartindent = true -- Do smart indenting when starting a new line
 o.cursorlineopt = "both"
 vim.wo.number = true
 vim.wo.relativenumber = true
+
 vim.wo.cursorline = true
-vim.wo.cursorcolumn = false
+vim.wo.cursorcolumn = true
 
 -- 42 School header configuration
 vim.g.user42 = "mgodawat" -- Your 42 login
