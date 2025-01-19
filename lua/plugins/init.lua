@@ -53,7 +53,7 @@ return {
     -- 42header plugin
     {
         "42Paris/42header",
-        ft = { "c", "cpp" },
+        ft = { "c", "cpp", "make"},
         config = function()
         end,
     },
