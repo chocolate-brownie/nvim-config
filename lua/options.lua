@@ -16,7 +16,8 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 
 vim.wo.cursorline = true
-vim.wo.cursorcolumn = true
+vim.api.nvim_set_hl(0, 'CursorLine', { bg = '#262626' })
+vim.wo.cursorcolumn = false
 
 -- 42 School header configuration
 vim.g.user42 = "mgodawat" -- Your 42 login

@@ -4,7 +4,7 @@
 local M = {}
 
 M.base46 = {
-    theme = "rosepine",
+    theme = "github_dark",
     transparency = true,
     hl_override = {
         -- Comments and macros (your working part)
@@ -14,14 +14,13 @@ M.base46 = {
         Macro = { italic = true },
         
         -- Function highlights from your screenshot
-        Function = { bold = true, italic = false },
-        ["@keyword"] = { italic = true },
-        ["@type.builtin"] = { italic = true },
+        -- ["@keyword"] = { italic = true },
+        -- ["@type.builtin"] = { italic = true },
         -- ["@function"] = { bold = true },
         -- ["@function.call"] = { bold = true },
         
         -- Variables in italic
-        ["@variable.parameter"] = { italic = true, bold = false },
+        -- ["@variable.parameter"] = { italic = true, bold = false },
     },
 }
 
