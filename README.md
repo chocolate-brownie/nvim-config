@@ -29,31 +29,11 @@ A customized Neovim configuration based on [kickstart.nvim](https://github.com/t
 mv ~/.config/nvim ~/.config/nvim.bak
 
 # Clone repository
-git clone [your-repo-url] ~/.config/nvim
+git clone https://github.com/chocolate-brownie/nvim-config ~/.config/nvim
 
 # Install plugins (run inside neovim)
-:PackerSync
+:Lazy
 ```
-
-## 🎮 Key Bindings
-
-### General
-- `<Space>` - Leader key
-- `<C-h/j/k/l>` - Navigate splits
-- `<C-w>` - Window commands
-
-### File Navigation
-- `<leader>ff` - Find files
-- `<leader>fg` - Live grep
-- `<leader>fb` - Browse buffers
-- `<leader>e` - Toggle file explorer
-
-### LSP
-- `gd` - Go to definition
-- `K` - Hover documentation
-- `<leader>ca` - Code actions
-- `<leader>rn` - Rename
-- `[d`, `]d` - Navigate diagnostics
 
 ### 42 Specific
 - `:CFormatter42` - Run norminette formatter
@@ -61,21 +41,11 @@ git clone [your-repo-url] ~/.config/nvim
 
 ## 📦 Included Plugins
 
-- packer.nvim - Package manager
+- lazy.nvim - Package manager
 - nvim-lspconfig - LSP configuration
-- nvim-cmp - Completion engine
 - telescope.nvim - Fuzzy finder
 - nvim-treesitter - Syntax highlighting
-- nvim-tree.lua - File explorer
-- formatter.nvim - Code formatting
-
-## 🛠️ Customization
-
-Edit these files to customize your setup:
-- `init.lua` - Main configuration
-- `lua/plugins.lua` - Plugin list
-- `lua/lsp.lua` - LSP settings
-- `lua/keymaps.lua` - Key bindings
+- nvim-neo-tree.lua - File explorer
 
 ### Header File Settings
 
@@ -94,24 +64,8 @@ To update your header information:
 The header template follows 42's norm requirements and will be automatically inserted using the configured command (default: `:Stdheader`).
 
 ## ⚠️ Troubleshooting
-
-1. LSP not working:
-   ```bash
-   # Install clangd
-   sudo apt install clangd-12  # Ubuntu
-   brew install llvm          # macOS
-   ```
-
-2. Telescope errors:
-   ```bash
-   # Install ripgrep
-   sudo apt install ripgrep   # Ubuntu
-   brew install ripgrep      # macOS
-   ```
-
-## 📝 License
-
-MIT License - see LICENSE file
+RTFM (init.lua)
+https://www.youtube.com/watch?v=m8C0Cq9Uv9o&t=103s
 
 ## 🤝 Contributing
 
