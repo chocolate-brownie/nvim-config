@@ -339,22 +339,22 @@ require("lazy").setup({
 		end,
 	},
 	-- 42 C code formatter/
-	{
-		"cacharle/c_formatter_42.vim",
-		lazy = false, -- Load on startup
-		config = function()
-			-- Set key mapping for formatting (optional)
-			vim.keymap.set("n", "<leader>f", ":NormFormat<CR>", { silent = true })
-			-- Autoformat on save (optional, be careful with this!)
-			-- vim.cmd([[
-			--     augroup FortyTwoFormatter
-			--         autocmd!
-			--         autocmd BufWritePre *.c,*.h :NormFormat
-			--     augroup END
-			-- ]])
-		end,
-		ft = { "c", "h" }, -- Only load for C files
-	},
+	-- {
+	-- 	"cacharle/c_formatter_42.vim",
+	-- 	lazy = false, -- Load on startup
+	-- 	config = function()
+	-- 		-- Set key mapping for formatting (optional)
+	-- 		vim.keymap.set("n", "<leader>f", ":NormFormat<CR>", { silent = true })
+	-- 		-- Autoformat on save (optional, be careful with this!)
+	-- 		-- vim.cmd([[
+	-- 		--     augroup FortyTwoFormatter
+	-- 		--         autocmd!
+	-- 		--         autocmd BufWritePre *.c,*.h :NormFormat
+	-- 		--     augroup END
+	-- 		-- ]])
+	-- 	end,
+	-- 	ft = { "c", "h" }, -- Only load for C files
+	-- },
 
 	-- Here is a more advanced example where we pass configuration
 	-- options to `gitsigns.nvim`. This is equivalent to the following Lua:
