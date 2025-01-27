@@ -1,79 +1,34 @@
-# 42 School Neovim Configuration
+# AstroNvim Template
 
-A customized Neovim configuration based on [kickstart.nvim](https://github.com/tjdevries), optimized for 42 School C/C++ projects.
-![image](https://github.com/user-attachments/assets/b5c696ae-7f07-4cb4-a177-074bba421caa)
+**NOTE:** This is for AstroNvim v4+
 
-## ✨ Features
+A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
-- LSP support for C/C++
-- Integrated 42 Norminette formatter (`:CFormatter42`)
-- File explorer (nvim-tree)
-- Fuzzy finder (telescope)
-- Git integration
-- Auto-completion
-- Syntax highlighting
+## 🛠️ Installation
 
-## 🚀 Prerequisites
+#### Make a backup of your current nvim and shared folder
 
-- Neovim >= 0.9.0
-- Git
-- gcc/clang compiler
-- ripgrep (for telescope)
-- A C/C++ LSP server (clangd)
-- 42 Norminette
-
-## ⚡ Installation
-
-```bash
-# Backup existing config
+```shell
 mv ~/.config/nvim ~/.config/nvim.bak
-
-# Clone repository
-git clone https://github.com/chocolate-brownie/nvim-config ~/.config/nvim
-
-# Install plugins (run inside neovim)
-:Lazy
+mv ~/.local/share/nvim ~/.local/share/nvim.bak
+mv ~/.local/state/nvim ~/.local/state/nvim.bak
+mv ~/.cache/nvim ~/.cache/nvim.bak
 ```
 
-### 42 Specific
-- `:CFormatter42` - Run norminette formatter
-- `:make` - Compile project using Makefile
+#### Create a new user repository from this template
 
-## 📦 Included Plugins
+Press the "Use this template" button above to create a new repository to store your user configuration.
 
-- lazy.nvim - Package manager
-- nvim-lspconfig - LSP configuration
-- telescope.nvim - Fuzzy finder
-- nvim-treesitter - Syntax highlighting
-- nvim-neo-tree.lua - File explorer
+You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
 
-### Header File Settings
+#### Clone the repository
 
-Default header settings are configured for 42 School projects:
-```lua
-vim.g.user42 = 'your_login'
-vim.g.mail42 = 'your_email@student.42.fr'
+```shell
+git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
 ```
 
-To update your header information:
-1. Open `init.lua`
-2. Locate the header configuration section
-3. Replace `your_login` with your 42 intra username
-4. Replace `your_email@student.42.fr` with your 42 email
+#### Start Neovim
 
-The header template follows 42's norm requirements and will be automatically inserted using the configured command (default: `:Stdheader`).
-
-## ⚠️ Troubleshooting
-RTFM (init.lua)
-https://www.youtube.com/watch?v=m8C0Cq9Uv9o&t=103s
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Submit a pull request
-
-## 🙏 Credits
-
-- [TJ DeVries](https://github.com/tjdevries) - Original kickstart.nvim
-- 42 School community
+```shell
+nvim
+```
