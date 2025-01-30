@@ -11,11 +11,11 @@ return {
 		-- Configure core features of AstroNvim
 		features = {
 			large_buf = { size = 1024 * 256, lines = 10000 }, -- set global limits for large files for disabling features like treesitter
-			autopairs = true,                        -- enable autopairs at start
-			cmp = true,                              -- enable completion at start
-			diagnostics_mode = 3,                    -- diagnostic mode on start (0 = off, 1 = no signs/virtual text, 2 = no virtual text, 3 = on)
-			highlighturl = true,                     -- highlight URLs at start
-			notifications = true,                    -- enable notifications at start
+			autopairs = true, -- enable autopairs at start
+			cmp = true, -- enable completion at start
+			diagnostics_mode = 3, -- diagnostic mode on start (0 = off, 1 = no signs/virtual text, 2 = no virtual text, 3 = on)
+			highlighturl = true, -- highlight URLs at start
+			notifications = true, -- enable notifications at start
 		},
 		-- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
 		diagnostics = {
@@ -50,13 +50,12 @@ return {
 				autoindent = true, -- Copy indent from current line when starting a new line
 				c_syntax_for_h = 1, -- Treat .h files as C headers
 			},
-		},              -- Mappings can be configured through AstroCore as well.
+		}, -- Mappings can be configured through AstroCore as well.
 		-- NOTE: keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
 		mappings = {
 			-- first key is the mode
 			n = {
 				-- second key is the lefthand side of the map
-
 				-- navigate buffer tabs
 				["]b"] = {
 					function()
