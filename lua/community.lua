@@ -13,8 +13,10 @@ return {
 	{ import = "astrocommunity.scrolling.mini-animate" },
 
 	-- Colorschemes
-	{ import = "astrocommunity.colorscheme.monokai-pro-nvim" },
-	{ import = "astrocommunity.colorscheme.oxocarbon-nvim" },
-	{ import = "astrocommunity.colorscheme.lackluster-nvim" },
+	{ import = "astrocommunity.colorscheme.rose-pine" },
+	{ import = "astrocommunity.colorscheme.catppuccin" },
+	{ import = "astrocommunity.colorscheme.gruvbox-nvim" },
+	{ import = "astrocommunity.colorscheme.kanagawa-nvim" },
+	{ import = "astrocommunity.colorscheme.tokyonight-nvim" },
 	-- import/override with your plugins folder
 }
