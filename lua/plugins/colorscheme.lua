@@ -1,30 +1,50 @@
 return {
+	-- ash
 	{
-		"gruvbox.nvim",
+		"drewxs/ash.nvim",
+		lazy = false,
 		priority = 1000,
-		config = true,
-		opts = {
-			terminal_colors = true, -- add neovim terminal colors
-			undercurl = true,
-			underline = true,
-			bold = true,
-			italic = {
-				strings = true,
-				comments = true,
-				folds = true,
-				operations = false,
-			},
-			strikethrough = true,
-			invert_selection = false,
-			invert_signs = false,
-			invert_tabline = false,
-			invert_intend_guides = false,
-			inverse = true, -- invert background for search, diffs, statuslines and errors
-			contrast = "", -- can be "hard", "soft" or empty string
-			palette_overrides = {},
-			overrides = {},
-			dim_inactive = false,
-			transparent_mode = true,
-		},
+		config = function()
+			require("ash").setup({
+				compile_path = vim.fn.stdpath("cache") .. "/ash",
+				transparent = false, -- transparent background
+				term_colors = false, -- terminal colors (e.g. g:terminal_color_x)
+				no_italic = true, -- disable italics
+				no_bold = false, -- disable bold
+				no_underline = false, -- disable underlines
+
+				-- override highlight groups [function/table]
+				-- e.g. highlights = function(colors)
+				--     return {
+				--         Comment = { fg = colors.red },
+				--         CmpBorder = { fg = colors.none },
+				--     }
+				-- end
+				highlights = {},
+
+				-- override style groups
+				-- e.g. comments = { "italic", "bold" }
+				styles = {
+					comments = {},
+					conditionals = {},
+					loops = {},
+					functions = {},
+					keywords = {},
+					strings = {},
+					variables = {},
+					numbers = {},
+					booleans = {},
+					properties = {},
+					types = {},
+					operators = {},
+				},
+			})
+		end,
+	},
+	-- no clown fiesta
+	{
+		"aktersnurra/no-clown-fiesta.nvim",
+		lazy = false,
+		priority = 1000,
 	},
 }
