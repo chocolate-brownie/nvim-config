@@ -15,8 +15,6 @@ return {
 	-- Colorschemes
 	{ import = "astrocommunity.colorscheme.rose-pine" },
 	{ import = "astrocommunity.colorscheme.catppuccin" },
-	{ import = "astrocommunity.colorscheme.gruvbox-nvim" },
-	{ import = "astrocommunity.colorscheme.kanagawa-nvim" },
 	{ import = "astrocommunity.colorscheme.tokyonight-nvim" },
 	{ import = "astrocommunity.colorscheme.lackluster-nvim" },
 	{ import = "astrocommunity.colorscheme.solarized-osaka-nvim" },
