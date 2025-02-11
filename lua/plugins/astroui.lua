@@ -9,10 +9,11 @@ return {
 	---@type AstroUIOpts
 	opts = {
 		-- change colorscheme
-		colorscheme = "lackluster-night",
+		colorscheme = "lackluster-mint",
 		-- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
 		highlights = {
 			init = {
+				Normal = { bg = "NONE" }, -- Add global transparency
 				NormalFloat = { bg = "NONE" }, -- Remove background for floating windows
 				NormalNC = { bg = "NONE" }, -- Remove background for non-current windows
 				SignColumn = { bg = "NONE" }, -- Remove background for sign column

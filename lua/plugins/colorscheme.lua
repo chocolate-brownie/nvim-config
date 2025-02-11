@@ -79,38 +79,4 @@ return {
 			})
 		end,
 	},
-
-	-- Lackluster theme
-
-	{
-		"slugbyte/lackluster.nvim",
-		name = "lackluster",
-		config = function()
-			local lackluster = require("lackluster")
-			local color = lackluster.color -- blue, green, red, orange, black, lack, luster, gray1-9
-
-			-- !must called setup() before setting the colorscheme!
-			lackluster.setup({
-				tweak_syntax = {
-					string = "default",
-					string_escape = "default",
-					comment = "default",
-					builtin = "default", -- builtin modules and functions
-					type = "default",
-					keyword = "default",
-					keyword_return = "default",
-					keyword_exception = "default",
-				},
-				tweak_background = {
-					normal = "none", -- main background
-					-- normal = 'none',    -- transparent
-					-- normal = '#a1b2c3',    -- hexcode
-					-- normal = color.green,    -- lackluster color
-					telescope = "none", -- telescope
-					menu = "none", -- nvim_cmp, wildmenu ... (bad idea to transparent)
-					popup = "none", -- lazy, mason, whichkey ... (bad idea to transparent)
-				},
-			})
-		end,
-	},
 }
